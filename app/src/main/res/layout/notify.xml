@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:orientation="vertical"
+    android:rowCount="2"
+    android:columnCount="3">
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progress"-->
+<!--        style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="5dp"-->
+<!--        android:progress="0"-->
+<!--        android:layout_row="0"-->
+<!--        android:layout_column="0"-->
+<!--        android:layout_columnSpan="3"/>-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="10dp">
+
+            <Button
+                android:id="@+id/playpause_but"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/playpause"
+                android:backgroundTint="@color/grn" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="#3B85D5"/>
+
+        <FrameLayout
+            android:id="@+id/frameLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/design_default_color_error"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/resotka"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/resotka"
+                android:backgroundTint="#606060" />
+        </FrameLayout>
+    </LinearLayout>
+</GridLayout>
